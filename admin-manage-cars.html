@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Cars - Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="admin-body">
+
+    <div class="admin-wrapper">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="logo"><i class="fas fa-car-side"></i> Brandon Motors</a>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin-dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li class="active"><a href="admin-manage-cars.html"><i class="fas fa-tasks"></i> Manage Cars</a></li>
+                    <li><a href="admin-add-car.html"><i class="fas fa-plus-circle"></i> Add New Car</a></li>
+                    <li><a href="admin-sold-cars.html"><i class="fas fa-dollar-sign"></i> Sold Cars</a></li>
+                    <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main-content">
+            <header class="admin-header">
+                <h1>Manage Car Listings</h1>
+                <a href="admin-add-car.html" class="btn"><i class="fas fa-plus"></i> Add New Car</a>
+            </header>
+
+            <section class="admin-content">
+                <div class="table-responsive">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Car Name</th>
+                                <th>Price (KES)</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Sample Car Row 1 -->
+                            <tr>
+                                <td><img src="https://i.pinimg.com/1200x/65/86/11/65861169028c5674bcbd7a5800415057.jpg" alt="Toyota Prado" class="car-thumbnail"></td>
+                                <td><strong>Toyota Prado TX-L</strong><br>2021</td>
+                                <td>6,500,000</td>
+                                <td><span class="status-badge available">Available</span></td>
+                                <td class="action-buttons-cell">
+                                    <a href="#" class="btn-action edit" title="Edit"><i class="fas fa-edit"></i></a>
+                                    <a href="#" class="btn-action sold" title="Mark as Sold"><i class="fas fa-dollar-sign"></i></a>
+                                    <a href="#" class="btn-action delete" title="Delete"><i class="fas fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+                            <!-- Sample Car Row 2 -->
+                            <tr>
+                                <td><img src="https://i.pinimg.com/1200x/43/69/27/4369276d5b1427663e35128ef9bc5af1.jpg" alt="Mercedes-Benz C-Class" class="car-thumbnail"></td>
+                                <td><strong>Mercedes-Benz C-Class</strong><br>2022</td>
+                                <td>4,800,000</td>
+                                <td><span class="status-badge available">Available</span></td>
+                                <td class="action-buttons-cell">
+                                    <a href="#" class="btn-action edit" title="Edit"><i class="fas fa-edit"></i></a>
+                                    <a href="#" class="btn-action sold" title="Mark as Sold"><i class="fas fa-dollar-sign"></i></a>
+                                    <a href="#" class="btn-action delete" title="Delete"><i class="fas fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+                            <!-- Sample Car Row 3 (Sold) -->
+                            <tr>
+                                <td><img src="https://images.unsplash.com/photo-1616422285623-13ff0162193c?q=80&w=2070" alt="Subaru Forester" class="car-thumbnail"></td>
+                                <td><strong>Subaru Forester</strong><br>2020</td>
+                                <td>3,200,000</td>
+                                <td><span class="status-badge sold">Sold</span></td>
+                                <td class="action-buttons-cell">
+                                    <a href="#" class="btn-action edit" title="Edit"><i class="fas fa-edit"></i></a>
+                                    <a href="#" class="btn-action delete" title="Delete"><i class="fas fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+                            <!-- Sample Car Row 4 -->
+                            <tr>
+                                <td><img src="https://i.pinimg.com/736x/0e/83/3a/0e833a803c73035ebff2795bf4466003.jpg" alt="BMW 3 Series" class="car-thumbnail"></td>
+                                <td><strong>BMW 3 Series</strong><br>2021</td>
+                                <td>4,100,000</td>
+                                <td><span class="status-badge available">Available</span></td>
+                                <td class="action-buttons-cell">
+                                    <a href="#" class="btn-action edit" title="Edit"><i class="fas fa-edit"></i></a>
+                                    <a href="#" class="btn-action sold" title="Mark as Sold"><i class="fas fa-dollar-sign"></i></a>
+                                    <a href="#" class="btn-action delete" title="Delete"><i class="fas fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+                            <!-- Sample Car Row 5 (Newly Added) -->
+                            <tr>
+                                <td><img src="https://i.pinimg.com/1200x/cd/13/6d/cd136de06764e56e9c797b541e715839.jpg" alt="Mazda CX-5" class="car-thumbnail"></td>
+                                <td><strong>Mazda CX-5</strong><br>2020</td>
+                                <td>3,400,000</td>
+                                <td><span class="status-badge available">Available</span></td>
+                                <td class="action-buttons-cell">
+                                    <a href="#" class="btn-action edit" title="Edit"><i class="fas fa-edit"></i></a>
+                                    <a href="#" class="btn-action sold" title="Mark as Sold"><i class="fas fa-dollar-sign"></i></a>
+                                    <a href="#" class="btn-action delete" title="Delete"><i class="fas fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

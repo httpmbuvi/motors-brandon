@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sold Cars - Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="admin-body">
+
+    <div class="admin-wrapper">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="logo"><i class="fas fa-car-side"></i> Brandon Motors</a>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin-dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="admin-manage-cars.html"><i class="fas fa-tasks"></i> Manage Cars</a></li>
+                    <li><a href="admin-add-car.html"><i class="fas fa-plus-circle"></i> Add New Car</a></li>
+                    <li class="active"><a href="admin-sold-cars.html"><i class="fas fa-dollar-sign"></i> Sold Cars</a></li>
+                    <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main-content">
+            <header class="admin-header">
+                <h1>Sold Car Listings</h1>
+            </header>
+
+            <section class="admin-content">
+                <div class="table-responsive">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Car Name</th>
+                                <th>Price (KES)</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Sample Sold Car Row 1 -->
+                            <tr>
+                                <td><img src="https://images.unsplash.com/photo-1616422285623-13ff0162193c?q=80&w=2070" alt="Subaru Forester" class="car-thumbnail"></td>
+                                <td><strong>Subaru Forester</strong><br>2020</td>
+                                <td>3,200,000</td>
+                                <td><span class="status-badge sold">Sold</span></td>
+                                <td class="action-buttons-cell">
+                                    <a href="#" class="btn-action edit" title="View Details"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="btn-action delete" title="Delete Record"><i class="fas fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+                            <!-- Add other sold cars here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

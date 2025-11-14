@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Car - Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="admin-body">
+
+    <div class="admin-wrapper">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="logo"><i class="fas fa-car-side"></i> Brandon Motors</a>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin-dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="admin-manage-cars.html"><i class="fas fa-tasks"></i> Manage Cars</a></li>
+                    <li class="active"><a href="admin-add-car.html"><i class="fas fa-plus-circle"></i> Add New Car</a></li>
+                    <li><a href="admin-sold-cars.html"><i class="fas fa-dollar-sign"></i> Sold Cars</a></li>
+                    <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main-content">
+            <header class="admin-header">
+                <h1>Add New Car Listing</h1>
+            </header>
+
+            <section class="admin-content">
+                <form class="admin-form" id="add-car-form">
+                    <div class="form-section">
+                        <h3>Vehicle Details</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="car-name">Car Name (e.g., Prado TX-L)</label>
+                                <input type="text" id="car-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="car-brand">Brand</label>
+                                <input type="text" id="car-brand" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="car-price">Price (KES)</label>
+                                <input type="number" id="car-price" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="car-year">Year</label>
+                                <input type="number" id="car-year" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="car-mileage">Mileage (km)</label>
+                                <input type="number" id="car-mileage" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="car-condition">Condition</label>
+                                <select id="car-condition">
+                                    <option value="Used">Used</option>
+                                    <option value="New">New</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="car-fuel">Fuel Type</label>
+                                <select id="car-fuel">
+                                    <option value="Petrol">Petrol</option>
+                                    <option value="Diesel">Diesel</option>
+                                    <option value="Hybrid">Hybrid</option>
+                                    <option value="Electric">Electric</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="car-transmission">Transmission</label>
+                                <select id="car-transmission">
+                                    <option value="Automatic">Automatic</option>
+                                    <option value="Manual">Manual</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="car-description">Description</label>
+                            <textarea id="car-description" rows="6"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Upload Photos (5-10 recommended)</h3>
+                        <div class="photo-uploader">
+                            <div id="image-preview-container">
+                                <!-- Image previews will be injected here by JavaScript -->
+                            </div>
+                            <label for="photo-upload-input" class="upload-btn">
+                                <i class="fas fa-upload"></i> Click to Upload Photos
+                            </label>
+                            <input type="file" id="photo-upload-input" multiple accept="image/*">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn">Add Car to Listings</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

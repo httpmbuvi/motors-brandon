@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Brandon Motors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="admin-body">
+
+    <div class="admin-wrapper">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="logo"><i class="fas fa-car-side"></i> Brandon Motors</a>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="admin-dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="admin-manage-cars.html"><i class="fas fa-tasks"></i> Manage Cars</a></li>
+                    <li><a href="admin-add-car.html"><i class="fas fa-plus-circle"></i> Add New Car</a></li>
+                    <li><a href="admin-sold-cars.html"><i class="fas fa-dollar-sign"></i> Sold Cars</a></li>
+                    <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main-content">
+            <header class="admin-header">
+                <h1>Admin Dashboard</h1>
+                <div class="admin-user">
+                    <span>Welcome, Admin</span>
+                </div>
+            </header>
+
+            <section class="admin-content">
+                <!-- Stat Cards -->
+                <div class="stat-cards">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-car"></i></div>
+                        <div class="stat-info">
+                            <p>Total Listings</p>
+                            <span>25</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="stat-info">
+                            <p>Cars Available</p>
+                            <span>18</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-dollar-sign"></i></div>
+                        <div class="stat-info">
+                            <p>Cars Sold</p>
+                            <span>7</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="stat-info">
+                            <p>New Inquiries</p>
+                            <span>12</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="quick-actions">
+                    <h2>Quick Actions</h2>
+                    <a href="admin-add-car.html" class="btn"><i class="fas fa-plus"></i> Add a New Car</a>
+                    <a href="admin-manage-cars.html" class="btn btn-secondary"><i class="fas fa-edit"></i> Manage Existing Cars</a>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

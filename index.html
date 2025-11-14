@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Motors - Your Trusted Car Dealer in Kenya</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><i class="fas fa-car-side"></i> Brandon Motors</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="cars.html">Cars for Sale</a></li>
+                <li><a href="import.html">Car Import</a></li>
+                <li><a href="finance.html">Finance & Trade-In</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Find Your Dream Car Today!</h1>
+                <p>Your Trusted Car Dealer in Kenya — Quality, Affordability & Trust.</p>
+                <a href="#featured-cars" class="btn">View Cars</a>
+            </div>
+        </section>
+
+        <!-- Search Filter Section -->
+        <section class="search-filter">
+            <div class="container">
+                <h2>Search for a Car</h2>
+                <form class="search-form">
+                    <div class="form-group">
+                        <label for="car-type">Car Type</label>
+                        <select id="car-type" name="car-type">
+                            <option value="">Any Type</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="hatchback">Hatchback</option>
+                            <option value="truck">Truck</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="condition">Condition</label>
+                        <select id="condition" name="condition">
+                            <option value="">Any Condition</option>
+                            <option value="new">New</option>
+                            <option value="used">Used</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="brand">Brand</label>
+                        <select id="brand" name="brand">
+                            <option value="">Any Brand</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="nissan">Nissan</option>
+                            <option value="subaru">Subaru</option>
+                            <option value="mercedes">Mercedes-Benz</option>
+                            <option value="bmw">BMW</option>
+                            <option value="mazda">Mazda</option>
+                            <option value="vw">Volkswagen</option>
+                            <option value="landrover">Land Rover</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="price-range">Price Range (KES)</label>
+                        <select id="price-range" name="price-range">
+                            <option value="">Any Price</option>
+                            <option value="0-1m">0 - 1,000,000</option>
+                            <option value="1m-2m">1,000,000 - 2,000,000</option>
+                            <option value="2m-4m">2,000,000 - 4,000,000</option>
+                            <option value="4m+">4,000,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year</label>
+                        <select id="year" name="year">
+                            <option value="">Any Year</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn search-btn">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Featured Cars Section -->
+        <section id="featured-cars" class="featured-cars">
+            <div class="container">
+                <h2>Featured Cars</h2>
+                <div class="car-grid">
+                    <!-- Car Card 1 -->
+                    <div class="car-card">
+                        <img src="https://i.pinimg.com/1200x/65/86/11/65861169028c5674bcbd7a5800415057.jpg" alt="Toyota Prado">
+                        <div class="car-card-content">
+                            <h3>Toyota Prado</h3>
+                            <p class="price">KES 6,500,000</p>
+                            <div class="car-specs">
+                                <span><i class="fas fa-calendar-alt"></i> 2021</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 55,000 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                                <span><i class="fas fa-cogs"></i> Auto</span>
+                            </div>
+                            <a href="car-details.html" class="btn btn-secondary">Enquire Now</a>
+                        </div>
+                    </div>
+                    <!-- Car Card 2 -->
+                    <div class="car-card">
+                        <img src="https://images.unsplash.com/photo-1616422285623-13ff0162193c?q=80&w=2070" alt="Subaru Forester">
+                        <div class="car-card-content">
+                            <h3>Subaru Forester</h3>
+                            <p class="price">KES 3,200,000</p>
+                            <div class="car-specs">
+                                <span><i class="fas fa-calendar-alt"></i> 2020</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 70,000 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                                <span><i class="fas fa-cogs"></i> Auto</span>
+                            </div>
+                            <a href="car-details.html" class="btn btn-secondary">Enquire Now</a>
+                        </div>
+                    </div>
+                    <!-- Car Card 3 -->
+                    <div class="car-card">
+                        <img src="https://i.pinimg.com/1200x/43/69/27/4369276d5b1427663e35128ef9bc5af1.jpg" alt="Mercedes-Benz C-Class">
+                        <div class="car-card-content">
+                            <h3>Mercedes-Benz C-Class</h3>
+                            <p class="price">KES 4,800,000</p>
+                            <div class="car-specs">
+                                <span><i class="fas fa-calendar-alt"></i> 2022</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 30,000 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                                <span><i class="fas fa-cogs"></i> Auto</span>
+                            </div>
+                            <a href="car-details.html" class="btn btn-secondary">Enquire Now</a>
+                        </div>
+                    </div>
+                    <!-- Car Card 4 -->
+                    <div class="car-card">
+                        <img src="https://i.pinimg.com/1200x/a0/f0/79/a0f0796d320c5bbe530bf2a8e98243b2.jpg" alt="Nissan X-Trail">
+                        <div class="car-card-content">
+                            <h3>Nissan X-Trail</h3>
+                            <p class="price">KES 2,950,000</p>
+                            <div class="car-specs">
+                                <span><i class="fas fa-calendar-alt"></i> 2019</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 85,000 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                                <span><i class="fas fa-cogs"></i> Auto</span>
+                            </div>
+                            <a href="car-details.html" class="btn btn-secondary">Enquire Now</a>
+                        </div>
+                    </div>
+                    <!-- Car Card 5 -->
+                    <div class="car-card">
+                        <img src="https://i.pinimg.com/736x/0e/83/3a/0e833a803c73035ebff2795bf4466003.jpg" alt="BMW 3 Series">
+                        <div class="car-card-content">
+                            <h3>BMW 3 Series</h3>
+                            <p class="price">KES 4,100,000</p>
+                            <div class="car-specs">
+                                <span><i class="fas fa-calendar-alt"></i> 2021</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 40,000 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                                <span><i class="fas fa-cogs"></i> Auto</span>
+                            </div>
+                            <a href="car-details.html" class="btn btn-secondary">Enquire Now</a>
+                        </div>
+                    </div>
+                    <!-- Car Card 6 -->
+                    <div class="car-card">
+                        <img src="https://i.pinimg.com/1200x/cd/13/6d/cd136de06764e56e9c797b541e715839.jpg" alt="Mazda CX-5">
+                        <div class="car-card-content">
+                            <h3>Mazda CX-5</h3>
+                            <p class="price">KES 3,400,000</p>
+                            <div class="car-specs">
+                                <span><i class="fas fa-calendar-alt"></i> 2020</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 60,000 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                                <span><i class="fas fa-cogs"></i> Auto</span>
+                            </div>
+                            <a href="car-details.html" class="btn btn-secondary">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Brandon Motors, Nairobi, Kenya</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+254799219777">0799 219 777</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:barandon.motors@outlook.com">barandon.motors@outlook.com</a></p>
+                        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254799219777?text=Hello%20Brandon%20Motors,%20I%27m%20interested%20in%20one%20of%20your%20cars." target="_blank">Chat on WhatsApp</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h4>Brandon Motors</h4>
+                    <p>Your trusted partner in acquiring quality new and used vehicles in Kenya.</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div class="footer-hours">
+                    <h4>Office Hours</h4>
+                    <p>Mon–Sat: 8am–6pm</p>
+                    <p>Sun: Closed</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2025 Brandon Motors. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

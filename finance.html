@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance & Trade-In - Brandon Motors Kenya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><i class="fas fa-car-side"></i> Brandon Motors</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="cars.html">Cars for Sale</a></li>
+                <li><a href="import.html">Car Import</a></li>
+                <li><a href="finance.html">Finance & Trade-In</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1614029342442-d42a172323a3?q=80&w=1974');">
+            <div class="container">
+                <h1>Finance & Trade-In</h1>
+                <p>Flexible solutions to make your car ownership journey seamless.</p>
+            </div>
+        </section>
+
+        <!-- Finance Section -->
+        <section class="finance-section">
+            <div class="container">
+                <h2>Flexible Car Financing</h2>
+                <p class="subtitle" style="text-align: center; max-width: 700px; margin: -1rem auto 2rem auto;">We've partnered with Kenya's leading banks to offer you competitive financing options.</p>
+                <div class="finance-partners">
+                    <img src="https://via.placeholder.com/150x60.png?text=NCBA+Logo" alt="NCBA Bank">
+                    <img src="https://via.placeholder.com/150x60.png?text=Equity+Logo" alt="Equity Bank">
+                    <img src="https://via.placeholder.com/150x60.png?text=Co-op+Bank+Logo" alt="Co-operative Bank">
+                </div>
+
+                <div class="finance-form-container">
+                    <h3>Get Pre-Approved for a Car Loan</h3>
+                    <form class="contact-form-full">
+                        <div class="form-row">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                            <input type="tel" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" name="email" placeholder="Email Address" required>
+                            <input type="text" name="id_number" placeholder="National ID Number" required>
+                        </div>
+                        <select name="car_of_interest" required>
+                            <option value="" disabled selected>Select Car of Interest</option>
+                            <option value="Toyota Prado">Toyota Prado</option>
+                            <option value="Subaru Forester">Subaru Forester</option>
+                            <option value="Mercedes C-Class">Mercedes C-Class</option>
+                            <option value="Other">Other (Specify in message)</option>
+                        </select>
+                        <textarea name="message" placeholder="Additional details (e.g., preferred bank, employment status)" rows="4"></textarea>
+                        <button type="submit" class="btn">Apply for Pre-Approval</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trade-In Section -->
+        <section class="trade-in-section">
+            <div class="container">
+                <h2>Trade-In Your Old Car</h2>
+                <p class="subtitle" style="text-align: center; max-width: 700px; margin: -1rem auto 2rem auto;">Upgrade to a new car by trading in your current vehicle. Get a fair and instant valuation from our team.</p>
+                
+                <div class="trade-in-form-container">
+                    <h3>Request a Trade-In Valuation</h3>
+                    <form class="contact-form-full">
+                        <div class="form-row">
+                            <input type="text" name="car_make" placeholder="Car Make (e.g., Toyota)" required>
+                            <input type="text" name="car_model" placeholder="Car Model (e.g., Fielder)" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="number" name="car_year" placeholder="Year of Manufacture" required>
+                            <input type="number" name="car_mileage" placeholder="Current Mileage (km)" required>
+                        </div>
+                        <select name="car_condition" required>
+                            <option value="" disabled selected>Overall Condition</option>
+                            <option value="Excellent">Excellent</option>
+                            <option value="Good">Good</option>
+                            <option value="Fair">Fair</option>
+                        </select>
+                        <textarea name="details" placeholder="Any known issues or extra features?" rows="4"></textarea>
+                        <p style="margin-top: 1rem; font-size: 0.9rem;">We'll use this information for an initial estimate. A final offer will be made after a physical inspection.</p>
+                        <button type="submit" class="btn">Get My Valuation</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about"><h4>Brandon Motors</h4><p>Your trusted partner in acquiring quality new and used vehicles in Kenya.</p></div>
+                <div class="footer-social"><h4>Follow Us</h4><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-tiktok"></i></a></div>
+                <div class="footer-hours"><h4>Office Hours</h4><p>Mon–Sat: 8am–6pm</p><p>Sun: Closed</p></div>
+            </div>
+            <div class="copyright"><p>Copyright © 2025 Brandon Motors. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

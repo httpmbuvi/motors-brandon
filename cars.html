@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars for Sale - Brandon Motors Kenya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><i class="fas fa-car-side"></i> Brandon Motors</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="cars.html">Cars for Sale</a></li>
+                <li><a href="import.html">Car Import</a></li>
+                <li><a href="finance.html">Finance & Trade-In</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?q=80&w=2070');">
+            <div class="container">
+                <h1>Our Inventory</h1>
+                <p>Find the perfect car that fits your lifestyle and budget.</p>
+            </div>
+        </section>
+
+        <!-- Full Car Listing Section -->
+        <section class="car-listing-page">
+            <div class="container">
+                <!-- Filter section can be re-used here -->
+                <h2>All Cars for Sale</h2>
+                <div class="car-grid">
+                    <!-- Car Card 1 (Available) -->
+                    <div class="car-card">
+                        <div class="car-image-container">
+                            <img src="https://i.pinimg.com/1200x/65/86/11/65861169028c5674bcbd7a5800415057.jpg" alt="Toyota Prado">
+                            <span class="status-badge available">Available</span>
+                        </div>
+                        <div class="car-card-content">
+                            <h3>Toyota Prado</h3>
+                            <p class="price">KES 6,500,000</p>
+                            <div class="car-specs">
+                                <span><i class="fas fa-calendar-alt"></i> 2021</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 55,000 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                                <span><i class="fas fa-cogs"></i> Auto</span>
+                            </div>
+                            <a href="car-details.html" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                    <!-- Car Card 2 (Sold) -->
+                    <div class="car-card">
+                        <div class="car-image-container">
+                            <img src="https://images.unsplash.com/photo-1616422285623-13ff0162193c?q=80&w=2070" alt="Subaru Forester">
+                            <span class="status-badge sold">Sold</span>
+                        </div>
+                        <div class="car-card-content">
+                            <h3>Subaru Forester</h3>
+                            <p class="price">KES 3,200,000</p>
+                            <div class="car-specs">
+                                <span><i class="fas fa-calendar-alt"></i> 2020</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 70,000 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                                <span><i class="fas fa-cogs"></i> Auto</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary disabled">View Details</a>
+                        </div>
+                    </div>
+                    <!-- Car Card 3 (Available) -->
+                    <div class="car-card">
+                        <div class="car-image-container">
+                            <img src="https://i.pinimg.com/1200x/43/69/27/4369276d5b1427663e35128ef9bc5af1.jpg" alt="Mercedes-Benz C-Class">
+                            <span class="status-badge available">Available</span>
+                        </div>
+                        <div class="car-card-content">
+                            <h3>Mercedes-Benz C-Class</h3>
+                            <p class="price">KES 4,800,000</p>
+                            <div class="car-specs">
+                                <span><i class="fas fa-calendar-alt"></i> 2022</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 30,000 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                                <span><i class="fas fa-cogs"></i> Auto</span>
+                            </div>
+                            <a href="car-details.html" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                    <!-- Add more car cards here from index.html -->
+                    <div class="car-card">
+                        <div class="car-image-container">
+                            <img src="https://i.pinimg.com/1200x/a0/f0/79/a0f0796d320c5bbe530bf2a8e98243b2.jpg" alt="Nissan X-Trail">
+                            <span class="status-badge available">Available</span>
+                        </div>
+                        <div class="car-card-content">
+                            <h3>Nissan X-Trail</h3>
+                            <p class="price">KES 2,950,000</p>
+                            <div class="car-specs">
+                                <span><i class="fas fa-calendar-alt"></i> 2019</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 85,000 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                                <span><i class="fas fa-cogs"></i> Auto</span>
+                            </div>
+                            <a href="car-details.html" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about"><h4>Brandon Motors</h4><p>Your trusted partner in acquiring quality new and used vehicles in Kenya.</p></div>
+                <div class="footer-social"><h4>Follow Us</h4><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-tiktok"></i></a></div>
+                <div class="footer-hours"><h4>Office Hours</h4><p>Mon–Sat: 8am–6pm</p><p>Sun: Closed</p></div>
+            </div>
+            <div class="copyright"><p>Copyright © 2025 Brandon Motors. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
